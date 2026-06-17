@@ -1,0 +1,3 @@
+Jogador derrotou chefe
+Pedra
+Queda

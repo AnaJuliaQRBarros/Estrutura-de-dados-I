@@ -1,0 +1,37 @@
+#include <stdio.h>
+enum EstadoPersonagem
+{
+    PARADO,
+    CORRENDO,
+    PULANDO
+};
+
+int main()
+{
+    enum EstadoPersonagem estado_atual;
+    printf("Digite um numero para definir o estado do personagem (0 = Parado | 1 = Correndo | 2 = Pulando)\n");
+    scanf("%d", &estado_atual);
+    if (estado_atual == PARADO)
+    {
+        printf("O personagem esta parado.\n");
+    }
+    else
+    {
+        if (estado_atual == CORRENDO)
+        {
+            printf("O personagem esta correndo!\n");
+        }
+        else
+        {
+            if (estado_atual == PULANDO)
+            {
+                printf("O personagem esta pulando no ar!\n");
+            }
+            else
+            {
+                printf("Estado invalido!");
+            }
+        }
+    }
+    return 0;
+}
